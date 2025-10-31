@@ -1,73 +1,53 @@
-# Wikipedia Scraper 
+# Wikipedia Scraper
 
-- Repository: `wikipedia-scraper`
-- Type: `Consolidation`
-- Duration: `3 days`
-- Deadline: `31/10/2025 4:00 PM`
-- Show and Tell: 2-3 people will present their work during debrief
-- Team: `solo`
+## 🏢 Description
 
-## Mission Objectives
+In this project, we created a scraper that built a JSON file with the political leaders of each country from [this API](https://country-leaders.onrender.com/docs).
 
-In this project, we will guide you step by step through the process of:
+Within this file, we included the first paragraph of the Wikipedia page of these leaders.
 
-1. Creating a self-contained development environment (virtual environment)
-2. Retrieving some information from an API
-3. Leveraging your knowledge to scrape a website that does not provide an API
-4. Saving the output for later processing
+## 🧩 Installation
 
-More specifically, in this project we will query an API to obtain a list of countries and their past political leaders. We then extract and sanitize their short bio from Wikipedia. Finally, we save the data.
+Clone this repository:
 
-Scraping data is often the first coding step of a data science project (meaning, the data collection) and you will likely come back to it in the future.
+```
+git clone https://github.com/kristinnuyens/wikipedia-scraper
+cd wikipedia-scraper
+```
 
-![scraping](https://media4.giphy.com/media/Xe02toxlUsztG7iQgb/giphy.gif?cid=ecf05e47lixeo6qe5y4ooabkh0hfdz0t1pio4h0qgbngjq0n&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+## 📦 Repo structure
 
-## Learning Objectives
+```
+.
+├── src/
+│   ├── leaders_scraper.py
+├── README.md
+├── requirements.txt
+├── wikipedia_scraper_RESTART.ipynb
+└── wikipedia_scraper.ipynb
+```
+## 🛎️ Usage
 
-- Use [venv](https://docs.python.org/3/library/venv.html) to isolate your Python environment
-- Use [requests](https://requests.readthedocs.io/en/latest/) to call an external API are any internet link
-- Use [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) to extract text from HTML
-- Use proper exception handling
-- Get comfortable with JSON 
-- (_Optional_) Use OOP to split functionalities into classes and methods
-- (_Optional_) Use regex to clean text data
-- (_Optional_) Use multiprocessing to speedup your code
+1. Clone the repository to your local machine
 
-## The Mission
+2. Run the script, by executing `leaders_scraper.py` in the Terminal command line:
 
-Create a scraper that builds a JSON file with the political leaders of each country you get from [this API](https://country-leaders.onrender.com/docs).
+```
+python3 leaders_scraper.py
+```
+## ⏱️ Timeline
 
-Include in this file the first paragraph of the Wikipedia page of these leaders (you'll retrieve the Wikipedia page URL from the API, which you then have to scrape yourself).
+I worked on this project for three days.
 
-### Must-have features (MVP)
+## 👩‍💻 Contributors
 
-- You should have a working `wikipedia_scraper.ipynb` notebook that calls the API and creates a JSON file
-- Create your own exception to include proper exception handling
-- Have a nice README that explains your project.
+- Kristin Nuyens
 
-### Nice-to-have features
+## 📌 Personal Situation
+This project was done as part of the AI & Data Science Bootcamp at BeCode.org.
 
-- Use [Session()](https://requests.readthedocs.io/en/latest/user/advanced/) from the `requests` library instead of `get()`
-- A switch to store the output as CSV instead of JSON
-- Speed up the execution using multiprocessing
+Connect with me on [LinkedIn](https://www.linkedin.com/in/kristinnuyens/).
 
-### Steps
-
-Let's get to the heart of it. **Read through all of the below before starting!**
-
-#### 0. Setup and preparation
-- Create a GitHub repo with a name that makes sense (for example, `wikipedia-scraper`)
-- Create a virtual environment using [venv](https://docs.python.org/3/library/venv.html) or through VS Code directly. Don't forget to add it to your `.gitignore` file. Note: If you create it through VS Code, normally .gitignore will be automatically created!
-- **Read the docs from the [API](https://country-leaders.onrender.com/docs)!**
-- Copy the `wikipedia_scraper.ipynb` file from your fork into your new project repo.
-
-You're ready to go!
-
-#### 1. Complete the first MVP (Notebook)
-- Activate your environment and install the required modules (e.g. request, and beautifulsoup). 
-- Create a `requirements.txt` file with the required libraries (hint: pip freeze and pipreqs might be helpful here!)
-
-- **Now work your way through the `wikipedia_scraper.ipynb` notebook.** This notebook contains hints on calling the API endpoint, handling cookies, and extracting text with `BeautifulSoup`. Try to fill in the cells with appropriate and working code. 
 
 Once ready, move on to the next step and integrate your code into functions, create a `src` folder where you'll put the `leaders_scraper.py` 
 
